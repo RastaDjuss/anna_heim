@@ -30,6 +30,3 @@ export function getAnaheimProgramId(cluster: Cluster) {
       return ANNAHEIM_PROGRAM_ID
   }
 }
-
-// Explicitly export the utility functions
-export { getAnaheimProgramId }
