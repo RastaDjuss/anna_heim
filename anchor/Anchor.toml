@@ -7,7 +7,18 @@ skip-lint = false
 
 [programs.localnet]
 annaheim = "coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF"
-
+nft_voter = "GnftV5kLjd67tvHpNGyodwWveEKivz3ZWvvE3Z4xi2iw"
+gateway = "GgathUhdrCWRHowoRKACjgWhYHfxCEdBi5ViqYN6HVxk"
+quadratic = "quadCSapU8nTdLg73KHDnmdxKnJQsh7GUbu5tZfnRRr"
+solana-gateway = "gatem74V238djXdzWnJf94Wo1DcnuGkfijbf3AuBhfs"
+token-haver = "7gobfUihgoxA14RUnVaseoah89ggCgYAzgz1JoaPAXam"
+token_voter = "HA99cuBQCCzZu1zuHN2qBxo2FBo1cxNLwKkdt6Prhy8v"
+bonk-plugin = "7yJT49ajgYyuhWYzQMzwEt9u9Zbbt7r8Ft2wq1bhhfyy"
+anarco_world = "ThSq9qsRs6c6kBRrLJngezihMUgL86MdiDs4wNUi2F8"
+journal = "94L2mJxVu6ZMmHaGsCHRQ65Kk2mea6aTnwWjSdfSsmBC"
+non-custodial-escrow = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+onchain-0voting = "AkN2PoD2JrWyYzmB6FEbWBncQbsMxhYH5otfmQJFMsdC"
+self-custodial-facebook = "8vBaXtoP9dBt97jA9FQz9NyuchRpFWEuiLxLLj7MYbnQ"
 [registry]
 url = "https://api.apr.dev"
 

@@ -1,6 +1,19 @@
 [workspace]
 members = [
-    "programs/*"
+    "programs/anarco_world",
+    "programs/annaheim",
+    "programs/journal",
+    "programs/non-custodial-escrow",
+    "programs/onchain-voting",
+    "programs/self-custodial-facebook",
+    "programs/governance-progs-library/programs/bonk-plugin",
+    "programs/governance-progs-library/programs/gateway",
+    "programs/governance-progs-library/programs/nft-voter",
+    "programs/governance-progs-library/programs/quadratic",
+    "programs/governance-progs-library/programs/realm-voter",
+    "programs/governance-progs-library/programs/shared",
+    "programs/governance-progs-library/programs/token-haver",
+    "programs/governance-progs-library/programs/token-voter"
 ]
 resolver = "2"
 

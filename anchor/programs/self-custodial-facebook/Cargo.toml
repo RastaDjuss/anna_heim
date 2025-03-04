@@ -17,4 +17,4 @@ default = []
 
 [dependencies]
 anchor-lang = "0.30.1"
-indexmap = "2.7.1"
+
