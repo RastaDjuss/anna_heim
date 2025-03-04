@@ -15,9 +15,11 @@
   },
   "workspace": [
     "anchor/",
-    "anchor/programs/gover5nance-program-library/"
+    "anchor/programs/gover5nance-program-library/",
+    "patches-crates/swolana-program"
   ],
   "dependencies": {
+    "@babel/eslint-plugin": "^7.25.9",
     "@coral-xyz/anchor": "0.30.1",
     "@solana/spl-token": "0.4.12",
     "@solana/wallet-adapter-base": "0.9.23",
@@ -28,8 +30,10 @@
     "@tanstack/react-query": "^5.66.9",
     "@tanstack/react-query-next-experimental": "^5.66.9",
     "daisyui": "^4.12.24",
+    "i": "^0.3.7",
     "jotai": "^2.12.1",
     "next": "14.2.24",
+    "npm": "^11.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.5.2"
