@@ -1,3 +1,6 @@
 [submodule "anchor-apps"]
 	path = anchor-apps
 	url = git@github.com:RastaDjuss/anchor-by-example.git
+[submodule "anchor/programs/governance-progs-library"]
+	path = anchor/programs/governance-progs-library
+	url = git@github.com:RastaDjuss/governance-program-library.git
