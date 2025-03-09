@@ -13,6 +13,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "workspace": {
+    "anchor/": []
+  },
   "dependencies": {
     "@coral-xyz/anchor": "0.30.1",
     "@solana/spl-token": "0.4.12",
