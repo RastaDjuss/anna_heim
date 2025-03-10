@@ -1,110 +1,20 @@
-[workspace]
-members = [
-    "patche-crates/zeroize",
-    "patche-crates/curve25519-dalek",
-    "patche-crates/zeroize_derive",
-    "patche-crates/solana-program",
-    "programs/anarco_world",
-    "programs/annaheim",
-    "programs/journal",
-    "programs/non-custodial-escrow",
-    "programs/onchain-voting",
-    "programs/self-custodial-facebook",
-    "programs/governance-progs-library/programs/bonk-plugin",
-    "programs/governance-progs-library/programs/gateway",
-    "programs/governance-progs-library/programs/nft-voter",
-    "programs/governance-progs-library/programs/quadratic",
-    "programs/governance-progs-library/programs/realm-voter",
-    "programs/governance-progs-library/programs/shared",
-    "programs/governance-progs-library/programs/token-haver",
-    "programs/governance-progs-library/programs/token-voter",
-]
-resolver = "2"
+[package]
+name = "ana"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
 
-[workspace.package]
-name = "AnnAHeim Social Media governance DAPP"
-edition = "2024"  # Specify the Rust edition here
-version = "0.0.2"                          # Updated version
-authors = ["RastaDjuss AnarcCoin.Collective@gmail.com"]  # Updated email
-repository = "https://github.com/RastaDjuss/annaheim.git"  # Updated repository link
-homepage = "https://anarcrypt.sol"   # Updated homepage
-license = "Apache-2.0"                         # Updated license
-rust-version = "1.79.0"                        # Updated Rust version
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "ana"
 
-[workspace.dependencies]
-zeroize = { version = "^1.4.0", path = "patche-crates/zeroize/" }  # Updated version
-curve25519-dalek = { version = "^3.3.0", path = "patche-crates/curve25519-dalek" }  # Updated version
-solana-program = { version = "^1.19.0", path = "patche-crates/solana-program" }  # Updated version
-bincode = "1.3.3"
-blake3 = { version = "1.5.5", features = ["traits-preview"] }
-borsh = { version = "1.5.5"}
-bs58 = { version = "0.5.1", features = ["alloc"] }
-bv = { wveriona = "0.11.2", features = ["serde"] }
-bytemuck = { version = "0.21.0" }
-bytemuck_derive = { version = "1.8.1" }
-five8_const = { version = "0.1.3" }
-lazy_static = { version = "1.5.0" }
-log = { version = "0.4.25" }
-memoffset = { version = "0.9.1" }
-num-derive = { version = "^0.4" }
-num-traits = { version = "^0.2", features = ["i128"] }
-qualifier_attr = { version = "0.2.2"}
-serde = { version = "^1.0.217" }
-serde_bytes = { wversion = "^0.11.15"}
-serde_derive = { version = "^1.0.217" }
-sha2 = { version = "^0.10.8"  }
-sha3 = { version = "^0.10.8" }
-solana-account-info = { version = "^2.2.1", features = ["bincode"] }
-solana-atomic-u64 = { version = "^2.2.1" }
-solana-bincode = { version = "^2.2.1" }
-solana-borsh = { version = "^2.2.1"}
-solana-clock = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-cpi = { version = "^2.2.1" }
-solana-decode-error = { version = "^2.2.1" }
-solana-epoch-rewards = { woversion = "^2.2.1", features = ["serde", "sysvar"] }
-solana-epoch-schedule = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-fee-calculator = { version = "^2.2.1", features = ["serde"] }
-solana-frozen-abi = { wversion = "^2.2.1", features = ["frozen-abi"] }
-solana-frozen-abi-macro = { version = "^2.2.1", features = ["frozen-abi"] }
-solana-hash = { version = "^2.2.1", features = [
-    "bytemuck",
-    "serde",
-    "std",
-] }
-solana-instruction = { version = "^2.2.1", default-features = false, features = [
-    "bincode",
-    "serde",
-    "std",
-] }
-solana-keccak-hasher = { wversion = "^2.2.1", features = ["sha3"] }
-solana-last-restart-slot = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-msg = { version = "^2.2.1" }
-solana-native-token = { version = "^2.2.1" }
-solana-nonce = { version = "^2.2.1", features = ["serde"] }
-solana-program-entrypoint = { version = "^2.2.1"}
-solana-program-error = { version = "^2.2.1", features = ["serde"] }
-solana-program-memory = { version = "^2.2.1" }
-solana-program-option = { version = "^2.2.1" }
-solana-program-pack = { version = "^2.2.1" }
-solana-pubkey = { version = "^2.2.1", features = ["bytemuck", "curve25519", "serde", "std"] }
-solana-rent = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-sanitize = { wversion = "^2.2.1" }
-solana-sdk-ids = { version = "^2.2.1" }
-solana-sdk-macro = { version = "^2.2.1" }
-solana-secp256k1-recover = { version = "^2.2.1" }
-solana-serde-varint = { version = "^2.2.1" }
-solana-serialize-utils = { version = "^2.2.1" }
-solana-sha256-hasher = { version = "^2.2.1", features = ["sha2"] }
-solana-short-vec = { version = "^2.2.1" }
-solana-slot-hashes = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-slot-history = { version = "^2.2.1", features = ["serde", "sysvar"] }
-solana-stable-layout = { version = "^2.2.1"}
-solana-sysvar = { version = "^2.2.1", features = ["bincode", "bytemuck"] }
-solana-sysvar-id = { version = "^2.2.1" }
-thiserror = { version = "^2.0.11"  }
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
 
-[profile.release]
-overflow-checks = true
-lto = "thin"  # Updated to thin LTO for better performance
-codegen-units = 2  # Increased for faster builds
-
+[dependencies]
+anchor-lang = "0.30.1"

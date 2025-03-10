@@ -1,0 +1,3 @@
+[submodule "anchor/programs/sns-sdk"]
+	path = anchor/programs/sns-sdk
+	url = git@github.com:RastaDjuss/sns-sdk.git
